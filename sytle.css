@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serifce';
+    box-sizing: border-box;
+    }
+    body{
+        background: whitesmoke;
+    }
+    /* qeepta madaxa*/
+    nav{
+        display: flex;
+        width: 100%;
+        height:60px;
+        align-items: center;
+        justify-content: space-between;
+        background:#fff;
+        padding: 5px 5%;
+        position:fixed;
+        top: 0;
+        z-index: 100;
+        border: 1px solid #ccc;
+    }
+    .logo{
+        width: 160px;
+        margin-left:-50px;
+    }
+    nav .left.logo img{
+        width: 100px;
+        margin :5px 0;
+        cursor: pointer;
+ }
+    .nav-left{
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        margin-left: 10px;
+  }
+  .nav-left .search-bar{
+    width: 250px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin-left: 10px;
+    position: relative;
+    left: 15px;
+  }
+  .nav-left .search-bar i{
+    line-height: 40px;
+    font-size: 19px;
+    color: #919191;
+    margin-right:5px ;
+  }
+  .bar{
+   
+    line-height:40px;
+    font-size: 19px;
+    color:black;
+    margin-right:25px ;
+  }
+  .nav-left .search-bar input{
+    background: transparent;
+    outline: none;
+    border: 0;
+    font-size: 16px;
+    width: 200px;
+  }
+  .nav-center{
+    position: relative;
+    right:20px;
+  }
+.nav-center i{
+    margin:0 45px 0 45px;
+    font-size: 22px;
+      }
+      .nav-center i:hover{
+        color: #45abff;
+        cursor: pointer;
+      } 
+  .nav-rigth {
+  display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }  
+  .nav-rigth  i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #efefef;
+    line-height: 35px;
+    padding-left: 8px;
+    font-size: 18px;
+    margin-left: 8px;
+    cursor: pointer;
+  } 
+  .nav-rigth img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-left: 8px;
+    line-height: 45px;
+    cursor: pointer;
+  }
+  .nav-user-icon img{
+    width:45px;
+    height:40px;
+    border-radius:50%;
+    cursor: pointer;
+  }
+  .nav-user-icon {
+    margin-left: 30px;
+
+  }
+  .online{
+          position: relative;  
+        }
+        /* waa qeepta laga ogdo onlinka*/
+        .online::after{
+            content: '';
+            width: 7px;
+            height: 7px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            background: #41db51;
+            position: absolute;
+            top:0;
+            right: 0;
+        }
+     
+        /* halkaan ku dhamdy headerka*/
+        /*halkaan ka bilawanaa BODEGA*/
+        .container{
+          display: flex;  
+          justify-content: space-around;
+          padding: 13px 5%;
+          margin-top:60px;
+        }
+        .left-sidebar{
+          flex-basis: 25% ; 
+          position: sticky;
+          top: 70px;
+          align-self: flex-start;
+         
+        }
+        .right-sidebar{
+            flex-basis: 25% ; 
+            position: sticky;
+            top: 70px;
+            align-self: flex-start;
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            color: #626262;
+           
+          }
+        .main-content{
+            flex-basis:47% ;   
+        }
+        .imp-links a,.shortcut-links a{
+         text-decoration:none;    
+         display: flex;
+         align-items: center;
+         margin-bottom:30px;
+         color:#625662;
+         width:fit-content ;
+        }
+        .imp-links a img{
+            width: 25px;
+            margin-right: 15px;
+        }
+        .imp-links a:last-child{
+         color: #1876f2;
+        }
+        .imp-links {
+            border-bottom:1px solid #ccc;
+        }
+        .shortcut-links a img{
+         width: 40px; 
+         border-radius: 4px;  
+         margin-right: 15px;
+        }
+        .shortcut-links p{
+         margin: 25px 0;   
+         color: #626262;
+         font-weight: 500;
+        }
+        .sidebar-titele{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+        }
+        .right-sidebar h4{
+            font-weight: 600;
+            font-size:16px ;
+        }
+        .sidebar-titele a{
+            text-decoration: none;
+            color: #1876f2;
+            font-size: 12x;
+        }
+        /*waa qeebta rigt kore*/
+        .event{
+            display: flex;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .left-event{
+            border-radius: 10px;
+            height: 65px;
+            width: 65px;
+            margin-right: 15px;
+            padding-top: 10px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0 ,0, 0, 0.1);
+        }
+        .event p{
+            font-size: 12px;
+        }
+        .event a{
+         font-size: 12px;
+         text-decoration: none;
+         color: #1876f2;
+        }
+        .left-event span{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #1876f2;
+            color: #fff;
+            font-size: 10PX;
+            padding: 4px 0;
+        }
+        /*END RIGHT KA KORE*/
+        /*START QEEBTA DHAXDA RIGHT*/
+        .sidebar-ads{
+            width: 100%;
+            border-radius: 4PX;
+            margin-bottom: 20px;
+        }
+        .online-list{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20PX;
+        }
+        .online-list .online img{
+            width: 40px;
+            border-radius: 50px;
+        }
+        .online-list .online{
+            width: 40px;
+            border-radius: 50px;
+            margin-right: 15px;
+        }
+        .online-list .online::after{
+            top:unset;
+            bottom: 0;
+        }
+        /*WAA qeepbta MEDDEL KAsii Ah Post*/
+        .story-gallery{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 20px;
+             }
+    .story{
+        flex-basis: 18%;
+        padding-top: 32%;
+        position: relative;
+        background-position: center;
+           background-size: cover;
+        border-radius: 10px;
+    }
+    .story img {
+      position: absolute;
+      width: 45px;
+      border-radius: 50%;
+      top: 10px;
+      left: 10px;
+      border: 5px solid #1876f2
+    }
+    .story p{
+      position: absolute;
+      bottom: 10px;
+      width:100% ;
+      text-align: center;
+      color: #fff;
+      font-size:14px;
+    }
+    .story1{
+     background-image: linear-gradient(transparent,rgba(0,0,0,00.5)), url( img-g-f/par.jpg);/*  N.B*/ 
+    }
+    .story2{
+        background-image: linear-gradient(transparent,rgba(0,0,0,00.5)), url(img-g-f/photo2.jpg);/*  N.B*/ 
+       }
+       .story3{
+        background-image: linear-gradient(transparent,rgba(0,0,0,00.5)), url(img-g-f/yt.jpg);/*  N.B*/ 
+       }
+       .story4{
+        background-image: linear-gradient(transparent,rgba(0,0,0,00.5)), url(img-g-f/photo3.jpg);/*  N.B*/ 
+       }
+       .story5{
+        background-image: linear-gradient(transparent,rgba(0,0,0,00.5)), url(img-g-f/ga.jpg);/*  N.B*/ 
+       }
+       .story.story1 img{
+        top:unset;
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(-50%);
+        border: 0;
+        width: 35px;
+       }
+       /*END POST*/
+       /* STARTE PAGE*/
+       .write-post-container{
+        width:100%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        color:#626262 ;
+           }
+           .user-profile{
+            display: flex;
+            align-items: center;
+           }
+           .user-profile img{
+            width:45px;
+           
+            border-radius:50%;
+            margin-right: 10px;
+           }
+        
+           .user-profile p{
+          margin-bottom: -1px;
+           font-weight: 500;
+           color: #626262;
+           font-size: 20px;
+           }
+         .user-profile small{
+            font-size: 12px;
+         }  
+         .post-input-contener{
+            padding-left: 55px;
+            padding-bottom: 20px;
+         }
+         .post-input-contener textarea{
+            width: 100%;
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid #ccc;
+            background: transparent;
+            resize: none;
+         }
+         .add-post-links{
+            display: flex;
+            margin-top: 10px;
+         }
+         .add-post-links a{
+         text-decoration: none;
+         display: flex;
+         align-items: center;
+         color: #626262;
+         margin-right: 30px;
+         font-size: 13px;
+         }
+         .add-post-links a img{
+            width: 20px;
+            margin-right: 10px;
+         }
+         .post-contener{
+            width: 100%;
+            background: #fff;
+            border-radius: 6px;
+            padding: 20px;
+            color: #626262;
+            margin: 20px 0;
+         }
+         .user-profile span{
+            font-size: 13px;
+            color: #9a9a9a;
+         }
+         .post-text{
+            color: #9a9a9a;
+            margin: 15px 0;
+            font-size:18px;
+         }
+         .post-text span{
+           color: #626262;
+           font-weight: 500;
+         }
+         .post-text a{
+            color: #1876f2;
+            text-decoration: none;
+         }
+         .post-img{
+            width: 100%;
+            border-radius:4px ;
+            margin-bottom: 5px;
+         }
+         .post-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         .activity-icons div img{
+            width: 18px;
+            margin-right: 10px;
+         }
+         .activity-icons div{
+            display: inline-block;
+            align-items: center;
+            margin-right: 30px;
+         }
+         .post-profile-icon img{
+            width:20px;
+            border-radius: 50%;
+            margin-right: 5px;
+         }
+         .post-row a{
+            color: #9a9a9a;
+         }
+       .load-more-btn {
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        padding: 5px 10px;
+        border:  1px solid #626262;
+        color: #626262;
+        background: transparent;
+        border-radius: 4px;
+       }
+       .footer{
+        text-align: center;
+        color: #9a9a9a;
+        padding: 10px 0 20px;
+        font-size:15px;
+       }
+    
+      
+    @media (min-width:768px) {
+      .hej,.bar{
+        display: none;
+      }
+    }
+   @media(max-width:768px){
+      .nav-center, .left-sidebar,.right-sidebar,.search-bar{
+      display: none;
+      
+    
+         }
+    .main-content{
+      flex-basis:100% ;   
+    }
+   }
+   
+
+    
+    
+       
+       
