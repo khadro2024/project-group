@@ -72,7 +72,7 @@
   }
 .nav-center i{
     margin:0 45px 0 45px;
-    font-size: 22px;
+    font-size:15px;
       }
       .nav-center i:hover{
         color: #45abff;
@@ -441,7 +441,7 @@
         font-size:15px;
        }
     
-      
+     
     @media (min-width:768px) {
       .hej,.bar{
         display: none;
