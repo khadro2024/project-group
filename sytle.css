@@ -447,9 +447,7 @@
       .hej,.bar{
         display: none;
       }
-      .main-content{
-        flex-basis:105% ;   
-      }
+      
     }
    @media(max-width:768px){
       .nav-center, .left-sidebar,.right-sidebar,.search-bar{
@@ -458,7 +456,9 @@
     
          }
     .main-content{
-      flex-basis:105% ;   
+      flex-basis:100% ; 
+      margin: 0;  
+      padding: 0;
     }
    }
    
