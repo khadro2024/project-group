@@ -81,7 +81,7 @@
   .nav-rigth {
   display: flex;
     align-items: center;
-    margin-right: 7px;
+    margin-right: 10px;
   }  
   .nav-rigth  i {
     width: 35px;
@@ -446,6 +446,9 @@
     @media (min-width:768px) {
       .hej,.bar{
         display: none;
+      }
+      .main-content{
+        flex-basis:100% ;   
       }
     }
    @media(max-width:768px){
