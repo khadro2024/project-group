@@ -440,6 +440,7 @@
         padding: 10px 0 20px;
         font-size:15px;
        }
+       
     
      
     @media (min-width:768px) {
@@ -450,7 +451,7 @@
    @media(max-width:768px){
       .nav-center, .left-sidebar,.right-sidebar,.search-bar{
       display: none;
-      
+            
     
          }
     .main-content{
