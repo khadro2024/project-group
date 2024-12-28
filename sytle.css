@@ -81,7 +81,7 @@
   .nav-rigth {
   display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 7px;
   }  
   .nav-rigth  i {
     width: 35px;
