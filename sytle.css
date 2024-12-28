@@ -448,7 +448,7 @@
         display: none;
       }
       .main-content{
-        flex-basis:100% ;   
+        flex-basis:105% ;   
       }
     }
    @media(max-width:768px){
@@ -458,7 +458,7 @@
     
          }
     .main-content{
-      flex-basis:100% ;   
+      flex-basis:105% ;   
     }
    }
    
